@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  overflow: hidden;
+}
+/* .container {
+
+} */
+.drag {
+  background-color: rgb(112, 250, 0);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.drag--row {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.genus {
+  width: 150px;
+  border-radius: 20px;
+  padding: 15px 20px;
+  color: rgb(210, 105, 30);
+  background-color: #000;
+}
+.item {
+  width: 150px;
+  height: 50px;
+  padding: 15px 20px;
+  color: rgb(210, 105, 30);
+  background-color: #000;
+  border-radius: 20px;
+  cursor: grab;
+}
+.item:active {
+  cursor: grabbing;
+}
+.placeholder {
+  width: 150px;
+  height: 50px;
+}
+.hovered {
+  border-radius: 20px;
+  border-top: 1px solid rgb(210, 105, 30);
+  border-bottom: 1px solid rgb(210, 105, 30);
+
+}
+.hold {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid  rgb(210, 105, 30);
+}
+.hide {
+  display: none;
+}
